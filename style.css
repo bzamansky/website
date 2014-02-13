@@ -3,3 +3,22 @@ html
 	background-color: #009999;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
+#sidebar
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 150px;
+	height: 100%;
+	background-color: blue;
+	float: left;
+}
+
+#heading
+{
+	padding-left: 30%;
+	position: relative;
+	float: left;
+	text-align: center;
+}
