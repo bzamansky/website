@@ -13,6 +13,11 @@ body {
     text-align: center;
 }
 
+.content div
+{
+    border-bottom: 1px solid #eee;
+}
+
 #about img 
 {
 	width: 260px;
