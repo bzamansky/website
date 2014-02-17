@@ -8,21 +8,50 @@ body {
     height: auto;
 }
 
+.content h2
+{
+    text-align: center;
+}
+
 #about img 
 {
-	width: 300px;
+	width: 260px;
+}
+
+
+#projects img
+{
+	float: left;
+	margin-right: 10px;
+}
+
+img
+{
+	max-width: 300px;
+	margin: 5px;
+}
+
+img:hover
+{
+
 }
 
 #about .pure-g
 {
 	display: inline-block;
-	margin-top: 10px;
+	margin: 30px;
 }
 
-#about #content
+#about .content
 {
 	display: inline;
 }
+
+#projects .content
+{
+	display: block;
+}
+
 
 /*
 Add transition to containers so they can push in and out.

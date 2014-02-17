@@ -49,15 +49,43 @@
         </div>
 
         <div class="content">
-            <h2 class="content-subhead">Projects</h2>
-            <p>
-                This is where the awesome projects go.
-            </p>
+            <span style="width:100%">
+                <h2 class="content-subhead">Poem Generator <span style="font-size:14px; padding-left:15px;">Spring 2013</span></h2>
+            </span>
+            <div>
 
-            <h2 class="content-subhead">There will be projects here.  For now, latin.</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+                <a href="bzamansky.com:7999"><img class="pure-img-responsive" src="./poemgen.png"></a>
+                <p> 
+                    Poem Generator is exactly what the name suggests, an app that generates poems.  More specifically, it is an app where users can generate poems and then share them with their peers.  Users can create poems such as sonnets, haikus, free-verse, and rhyming poems, as well as poems in the style of famous poets like Poe and Whitman. The most recently generated poems are displayed on the home page, and users can share poems they like via facebook.</p>
+                <p>
+                    Poem Generator uses Flask, mongoDB, HTML, CSS, and JS.  It also uses nltk, a natural language toolkit that allows us to count syllables.  The application also scrapes rhymebrain.com for rhyming words, and checks them against nltk to make sure the number of syllables is correct for the poem.  In order to get poems in the style of other poets, we pulled collections by a select few famous poets from Project Gutenberg and scraped them, using markov chaining on them to emulate the styles of the various poets.
+                </p>
+                <p>
+                The poem generator is currently located <a href="bzamansky.com:7999">here</a>. 
+                If you want to see the code, take a look on <a href="https://github.com/bzamansky/Poem-Generator">github</a>.
+                </p>
+            </div>
+
+            <h2 class="content-subhead">Sound of the Streets <span style="font-size:14px; padding-left:15px;">Winter 2012</span></h2>
+            <div>
+                <img class="pure-img-responsive" src="./sots.png" style="float:right;">
+                <p>
+                    Sound of the Streets is an application that allows users to find songs based on their location.  Sound of the Streets takes either an address or a more general place of the location the user selects, whether it be their current location or an arbitrary point on the map.  It then finds a song that matches that place on Last.fm.  After finding this song, the song is then sent to Youtube to find a video to accompany the song.  The video is then played automatically on the website, in a playlist of songs all related to the location in question.
+                </p>
+                <p>
+                    Sound of the Streets is currently located <a href="bzamansky.com:7358">here</a>.  Unfortunately, the address setting is currently under maintenance, so if you want to use the app, please use place instead.
+                    And if you want to see the code, take a look on <a href="https://github.com/bzamansky/Sounds-of-the-Streets">github</a>.
+                </p>
+            </div>
+
+            <h2 class="content-subhead">Recipe Pricer <span style="font-size:14px; padding-left:15px;">Fall 2012</span></h2>
+            <div>
+                <img class="pure-img-responsive" src="./recipepricer.png">
+                <p>
+                    Unfortunately, the Recipe Pricer is not currently hosted, because the website we screen-scraped to get the recipes has changed the design of the website so much that the code we wrote no longer finds the correct data.</p>
+                    <p>Link to <a href="https://github.com/bzamansky/Recipe-Project">github</a>
+                </p>
+            </div>
         </div>
     </div>
 
