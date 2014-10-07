@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #B2D2F0;
+  font-family: arial;
+}
+
+a {
+  text-decoration: none;
+  color: #4F5F63;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+footer a {
+  color: #000;
+}
+
+footer a:hover {
+  cursor: pointer;
+}
+
+#header img {
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#header nav {
+  background-color: #000;
+  height: 40px;
+  padding-top: 0;
+  width: 100%;
+}
+
+#header nav a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 40px;
+}
+
+#header nav a:hover {
+  color: #EEBB66;
+}
+
+#header nav ul {
+  display: table;
+  width: 100%;
+}
+
+#header nav ul li {
+  display: table-cell;
+  width: 20%;
+  text-align: center;
+}
+
+#header img, #header #name {
+  width: 100%;
+}
+
+#header #name {
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  font-size: 6vw;
+  text-shadow: #EEBB66 0px 0px 7px;
+}
+
+#header #name a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#header #name a:hover {
+  text-shadow: #EEBB66 0px 0px 12px;
+}
+
+#header nav li .active {
+  color: #EEBB3A;
+}
+
+
+#content {
+    margin: auto;
+    width: 80%;
+    padding-top: 30px;
+}
+
+#content img {
+  padding-right: 20px;
+}
+
+.description {
+  float: right;
+  width: 75%;
+}
+
+#content p {
+  margin-top: 20px;
+}
+
+#content .project {
+  margin: 20px;
+  padding: 20px;
+  border: 2px dashed #636145;
+}
+
+#content .project img.arrow {
+  height: 45px;
+  float:right;
+  display: inline;
+}
+
+#content .project img.shot {
+  float: right;
+  height: 45px;
+  margin: -20px;
+  //display: inline;
+}
+
+@media all and (max-width: 710px){
+  img.cn {
+    display: none;
+  }
+}
+
+@media all and (max-width: 580px){
+  img.shot {
+    display: none;
+  }
+}
+
+#content .project img.arrow:hover {
+  opacity: 0.8;
+}
+
+#content .project p.subhead {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#content .project img.arrow {
+  float: left;
+  padding-left: 20px;
+}
+
+#content .project b {
+  float: left;
+  display: inline-block;
+}
+
+#content div.project {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#content h2 {
+  width: auto;
+  color: #000;
+}
+
+#content div.vis {
+  padding-bottom: 15px;
+  height: auto;
+}
+
+#content div.info {
+  display: none;
+}
+
+#content object {
+  margin-left: 100px;
+}
+
+#content #res {
+  padding-bottom: 10px;
+  text-align: center;
+}

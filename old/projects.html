@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+
+    <title>Batya Zamansky</title>
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="style.css">
+    <!--<![endif]-->  
+
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="#">Navigation</a>
+
+            <ul>
+                <li id="homeb"><a href="./index.html">Home</a></li>
+                <li id="aboutb"><a href="./about.html">About</a></li>
+
+                <li id="projectsb" class="menu-item-divided pure-menu-selected"><a href="./projects.html">Projects</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="projects">
+        <div class="header">
+            <h1>Batya Zamansky</h1>
+            <h2>Projects</h2>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">Poem Generator <span style="font-size:14px; padding-left:15px;">Spring 2013</span></h2>
+            <div>
+                <a href="bzamansky.com:7999"><img class="pure-img-responsive" src="./poemgen.png"></a>
+                <p> 
+                    Poem Generator is exactly what the name suggests, an app that generates poems.  More specifically, it is an app where users can generate poems and then share them with their peers.  Users can create poems such as sonnets, haikus, free-verse, and rhyming poems, as well as poems in the style of famous poets like Poe and Whitman. The most recently generated poems are displayed on the home page, and users can share poems they like via facebook.</p>
+                <p>
+                    Poem Generator uses Flask, mongoDB, HTML, CSS, and JS.  It also uses nltk, a natural language toolkit that allows us to count syllables.  The application also scrapes rhymebrain.com for rhyming words, and checks them against nltk to make sure the number of syllables is correct for the poem.  In order to get poems in the style of other poets, we pulled collections by a select few famous poets from Project Gutenberg and scraped them, using markov chaining on them to emulate the styles of the various poets.
+                </p>
+                <p>
+                The poem generator is currently located <a href="bzamansky.com:7999">here</a>. 
+                If you want to see the code, take a look on <a href="https://github.com/bzamansky/Poem-Generator">github</a>.
+                </p>
+            </div>
+
+            <h2 class="content-subhead">Sound of the Streets <span style="font-size:14px; padding-left:15px;">Winter 2012</span></h2>
+            <div>
+                <a href="bzamansky.com:7358"><img class="pure-img-responsive" src="./sots.png" style="float:right;"></a>
+                <p>
+                    Sound of the Streets is an application that allows users to find songs based on their location.  Sound of the Streets takes either an address or a more general place of the location the user selects, whether it be their current location or an arbitrary point on the map.  It then finds a song that matches that place on Last.fm.  After finding this song, the song is then sent to Youtube to find a video to accompany the song.  The video is then played automatically on the website, in a playlist of songs all related to the location in question.
+                </p>
+                <p>
+                    Sound of the Streets is currently located <a href="bzamansky.com:7358">here</a>.  Unfortunately, the address setting is currently under maintenance, so it is not always working properly.
+                    But if you want to see the code, take a look on <a href="https://github.com/bzamansky/Sounds-of-the-Streets">github</a>.
+                </p>
+            </div>
+
+            <h2 class="content-subhead">Recipe Pricer <span style="font-size:14px; padding-left:15px;">Fall 2012</span></h2>
+            <div>
+                <img class="pure-img-responsive" src="./recipepricer.png">
+                <p>
+                    The Recipe Pricer is an application that allows the user to find a recipe for something they want to cook, and then see how much it will cost to purchase all the ingredients they need.  Already have some of the ingredients?  That's okay, you can click on an ingredient to send it to the "already purchased" part of your shopping list.  Not the recipe you wanted?  You are welcome to try to search again, with slightly different parameters.
+                </p>
+                <p>
+                    This app uses Flask, HTML, JS, and CSS, and utilizes the Google Shopping API in order to find the costs of items.  It screenscrapes from Allrecipes.com to find the recipes for the item in question, and once found, it scrapes the ingredients to find the costs of them.
+                </p>
+                <p>
+                    Unfortunately, the Recipe Pricer is not currently hosted, because the website we screen-scraped to get the recipes has changed the design of the website so much that the code we wrote no longer finds the correct data.  But if you want, you can still look at the code on <a href="https://github.com/bzamansky/Recipe-Project">github</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="jquery.js"type="text/javascript"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

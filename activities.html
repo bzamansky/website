@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Batya Zamansky's Website</title>
+  <meta charset="UTF-8">
+  <script src="./style/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#cn").click(function(){
+        if ($("#cninfo").is(':visible')) {
+          $("#cninfo").css("display","none");
+          $("#cn").attr("src","./images/arrow_down.png");
+          $("img.cn").height("45px");
+          $("img.cn").css("margin","-20px");
+        }
+        else {
+          $("#cninfo").css("display","block");
+          $("#cn").attr("src","./images/arrow_up.png");
+          $("img.cn").height("100px");
+          $("img.cn").css("margin","20px");
+        }
+      });
+
+      $("#ac").click(function(){
+        if ($("#acinfo").is(':visible')) {
+          $("#acinfo").css("display","none");
+          $("#ac").attr("src","./images/arrow_down.png");
+          $("img.ac").height("45px");
+          $("img.ac").css("margin","-20px");
+        }
+        else {
+          $("#acinfo").css("display","block");
+          $("#ac").attr("src","./images/arrow_up.png");
+          $("img.ac").height("150px");
+          $("img.ac").css("margin","20px");
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div id="header">
+    <img src="./images/ac_island_stretch_200px.jpg" alt="Image of sunrise overlooking Vinalhaven">
+    <div id="name"><a href="./index.html">BATYA ZAMANSKY</a></div>
+    <nav>
+      <ul>
+        <li><a href="./projects.html">PROJECTS</a></li>
+        <li><a class="active" href="./activities.html">ACTIVITIES</a></li>
+        <li><a href="./resume.html">RESUME</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="content">
+      <div class="project header">
+      <h1>Activities</h1>
+      <p>
+        While I think seeing the projects I have done is very important, the main purpose of this site is to show you what I have done and who I am.  Projects are great for showing that, but I think that the things I do show that as well.  So below, I'm giving you a glimse of who I am by showing you my activities.
+      </p>
+    </div>
+    <div class="project">
+      <div class="vis">
+        <h2>Cornell Chai Notes</h2>
+        <p class="subhead">
+        	<b>Spring 2014 to present</b>
+        	<a href="#cn"><img class="arrow" id="cn" src="./images/arrow_down.png" alt="Down arrow"></a>
+          <img class="cn shot" src="http://imageprocessor.websimages.com/width/485/www.thechainotes.com/10350077_10203837214877854_2056471049_o-1.jpg" alt="Chai Notes">
+		</p>	
+      </div>
+      <div id="cninfo" class="info">
+        <p>
+          I am a member of the <a href="http://www.thechainotes.com/">Chai Notes</a>, Cornell's best Jewish A Cappella group.  I sing alto and am the alto section leader.  In the spring of 2014, we went on tour to Washington D.C. for the first half of our spring break, and in the fall of 2014 we began to record our newest album.
+        </p>
+        <p>
+          Being in the Chai Notes is wonderful.  It's an amazing group of people, and I enjoy singing with them and being a part of the group.
+        </p>
+      </div>
+    </div>
+    <div class="project">
+      <div class="vis">
+        <h2>Atlantic Challenge</h2>
+        <p class="subhead">
+        	<b>Summers of 2012 and 2014</b>
+        	<a href="#ac"><img class="arrow" id="ac" src="./images/arrow_down.png" alt="Down arrow"></a>
+          <img class="ac shot" src="./images/garuda.jpg" alt="Boat used in Atlantic Challenge">
+		</p>	
+      </div> 
+      <div id="acinfo" class="info"> 
+        <p>
+          <a href="http://atlanticchallenge.org/">Atlantic Challenge</a> is an international competition of seamanship.  Currently attended by at least 16 countries, at least 13 of whom have official teams, the competition is held every two years and is hosted by a different country each time.  In 2012, the competition was in Bantry, Ireland, and in 2014 it was in Sen&eacute;, France.  The competition consists of 10 days of events on and off the water.  The boats used are called Bantry Bay Gigs, 40 feet long and 40 feet wide with oars extended.  The boats have 10 oars and 3 sails, and have 13 people in them at any given time.
+        </p>
+        <p>
+          I joined team USA for the 2012 competition.  We had three weeks of training on Green's Island, near Vinalhaven, ME.  Green's Island has no electricity or plumbing.  For those three weeks, we got our fresh water from the well and carried the 5-7 gallon buckets and jugs from the well to where we had our meals.  We didn't have to cook (or find) our own food, we had food cooked for us, but we helped with all the chores on the island, as well as training for our competition.  Every day we were out in the boats sailing and rowing, preparing for the competition.
+        </p>
+        <p>
+          Two moments from my times competing in Atlantic Challenge stand out most to me.  One of them was during the 2012 competition, when I joined the Danish team for one of the events because they didn't have enough girls.  I wasn't on my own crew for that event, so I joined the Danes, and had the most fun time.  They told me at the start of the race that their goal for that race was to finish it (they hadn't been able to finish the previous event of that type).  They didn't care too much what place they came in.  Instead, they wanted to have a good clean race, to come through the finish line, and to have a fun time.  And we did.
+        </p>
+        <p>
+          The other moment that stands out to me was in 2014, a couple days before the actual competition.  I was coxing (steering) my team on a practice into Vannes, the nearby town in France where several events would be taking place.  Vannes has a canal that runs right up to the town center, with sailboats parked on either side of it.  We rowed the boat right into the canal, all the way to the end.  It was an amazing sight, the sailboats on either side of us, with only a foot or two of space past the oars, and the old buildings of the town in front of us.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+      <a href="#">Back to top</a>
+    </footer> 
+  
+</body>
+</html>
