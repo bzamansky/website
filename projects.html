@@ -7,6 +7,20 @@
   <script src="./style/jquery.js"></script>
   <script type="text/javascript">
 	  $(document).ready(function(){
+	  	$("#ag").click(function(){
+	  		if ($("#aginfo").is(':visible')) {
+	  			$("#aginfo").css("display","none");
+	  			$("#ag").attr("src","./images/arrow_down.png");
+	  			$("img.ag").height("45px");
+	  			$("img.ag").css("margin","-20px");
+	  		}
+	  		else {
+	  			$("#aginfo").css("display","block");
+	  			$("#ag").attr("src","./images/arrow_up.png");
+	  			$("img.ag").height("200px");
+	  			$("img.ag").css("margin","20px");
+	  		}
+		  });
 	  	$("#pg").click(function(){
 	  		if ($("#pginfo").is(':visible')) {
 	  			$("#pginfo").css("display","none");
@@ -74,6 +88,28 @@
 			<p>
 				These are some projects I've worked on in the last few years.  I've featured these because they are functioning and hosted on my website right now, and I feel that they demonstrate some of what I can do.  There are some that I've done that aren't shown here but you can see on my github.  They're not here either because I never got around to finishing them, or because I made them a while ago and don't have the software on my computer to load them to host them now.
 			</p>
+		</div>
+		<div class="project">
+			<div class="vis">
+				<h2>Agar.Cardboard</h2>
+				<p class="subhead">
+					<b>Summer 2015</b>
+					<a href="#ag"><img class="arrow" id="ag" src="./images/arrow_down.png" alt="Down arrow"></a>
+					<img class="ag shot" src="./images/poemgen.png" alt="Screenshot of the project">
+				</p>
+					
+			</div>
+			<div id="aginfo" class="info">
+				<p>
+					In the summer of 2015, I had an internship at <a href="originate.com">Originate</a>, and during the last month of my internnship, the other interns and I worked on an intern project.  We originally didn't have a good idea of what to do, but some of the full time employees suggested that we look into doing something relating to virtual reality.  We liked this idea, so we decided at first to do an immersive 3D meditation app.  But then we discovered <a href="agar.io">agar.io</a>, and after enjoying playing it so much, we decided that it would be a much more fun, albeit potentially more difficult, project to do.  So we decided to make agar.io in 3D for google cardboard.
+				</p>
+				<p>
+					We used Unity as the 3D game engine platform to build the application.  The four of us interns divided up the work into separate parts.  I personally worked on the basic gameplay components -- creating players and food for the players, and having the players move around and change size.  We worked together to put all of the parts of the game together, and at the end of the month we demo-ed our work.
+				</p>
+				<p>
+					If you want to see the code, take a look on <a href="https://github.com/bcalmeida/agar-cardboard">github</a>.
+				</p>
+			</div>		
 		</div>
 		<div class="project">
 			<div class="vis">

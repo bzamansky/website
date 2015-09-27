@@ -6,6 +6,16 @@
   <script src="./style/jquery.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
+      $("#cbc").click(function(){
+        if ($("#cbcinfo").is(':visible')) {
+          $("#cbcinfo").css("display","none");
+          $("#cbc").attr("src","./images/arrow_down.png");
+        }
+        else {
+          $("#cbcinfo").css("display","block");
+          $("#cbc").attr("src","./images/arrow_up.png");
+        }
+      });
       $("#cn").click(function(){
         if ($("#cninfo").is(':visible')) {
           $("#cninfo").css("display","none");
@@ -61,16 +71,30 @@
     </div>
     <div class="project">
       <div class="vis">
+        <h2>Cornell Coding Boot Camp</h2>
+        <p class="subhead">
+          <b>September 26th, 2015</b>
+          <a href="#cbc"><img class="arrow" id="cbc" src="./images/arrow_down.png" alt="Down arrow"></a>
+        </p>  
+      </div>
+      <div id="cbcinfo" class="info">
+        <p>
+          I was a mentor in the <a href="https://codingcamp2015.splashthat.com/">Cornell Coding Boot Camp</a> in September of 2015.  The event's goal was to educate women (and some men) in coding in a day.  We taught people the basics of coding -- how to make a github website, how to do some basic HTML/CSS and Javascript.  At the end of the day we showed them how to direct their own personal domain url to the github page they had worked on all day.
+        </p>
+      </div>
+    </div>
+    <div class="project">
+      <div class="vis">
         <h2>Cornell Chai Notes</h2>
         <p class="subhead">
         	<b>Spring 2014 to present</b>
         	<a href="#cn"><img class="arrow" id="cn" src="./images/arrow_down.png" alt="Down arrow"></a>
           <img class="cn shot" src="http://imageprocessor.websimages.com/width/485/www.thechainotes.com/10350077_10203837214877854_2056471049_o-1.jpg" alt="Chai Notes">
-		</p>	
+		    </p>	
       </div>
       <div id="cninfo" class="info">
         <p>
-          I am a member of the <a href="http://www.thechainotes.com/">Chai Notes</a>, Cornell's best Jewish A Cappella group.  I sing alto and am the alto section leader.  In the spring of 2014, we went on tour to Washington D.C. for the first half of our spring break, and in the fall of 2014 we began to record our newest album.
+          I am the musical director of the <a href="http://www.thechainotes.com/">Chai Notes</a>, Cornell's best Jewish A Cappella group.  As musical director, I arrange music for the group.  Additionnally, I lead rehearsals and teach the songs to the group. In the spring of 2014, we went on tour to Washington D.C. for the first half of our spring break, and in the fall of 2015 we released our first album in 7 years.
         </p>
         <p>
           Being in the Chai Notes is wonderful.  It's an amazing group of people, and I enjoy singing with them and being a part of the group.
@@ -84,7 +108,7 @@
         	<b>Summers of 2012 and 2014</b>
         	<a href="#ac"><img class="arrow" id="ac" src="./images/arrow_down.png" alt="Down arrow"></a>
           <img class="ac shot" src="./images/garuda.jpg" alt="Boat used in Atlantic Challenge">
-		</p>	
+		    </p>	
       </div> 
       <div id="acinfo" class="info"> 
         <p>
